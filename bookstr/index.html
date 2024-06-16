@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Book Haven</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">The Book Haven</div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <header>
+            <h1>Welcome to The Book Haven</h1>
+        </header>
+        <main>
+            <ul id="book-list"></ul>
+            <div class="controls">
+                <input type="text" id="search-bar" placeholder="Search for a book...">
+                <button onclick="searchBook()">Search</button>
+                <button onclick="clearSearchHighlights()">Clear Highlights</button>
+                <br>
+                <button onclick="addBook()">Add Book</button>
+                <button onclick="removeBook()">Remove Last Book</button>
+            </div>
+        </main>
+    </div>
+    <footer>
+        <p>&copy; 2024 The Book Haven. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
